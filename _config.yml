@@ -1,20 +1,23 @@
+# "/" + 仓库的名字. 资源文件的路径组成部分
 baseurl: /create-story-template
 
-# Site
-name: "Sddtc"
+# 网页的标题
 title: "Sddtc's web"
+
+# 个人昵称
+name: "Sddtc"
+# 个人介绍副标题
 description: "子标题"
-logo: 'Logo'
 
-# Pagination
+# 分页配置
+# 每页文章数量
 paginate: 9
-paginate_path: /page:num/
 
-# Plugins
+# 其它配置，可忽略
+paginate_path: /page:num/
 plugins:
   - jekyll-paginate
 
-# Other
 markdown: kramdown
 
 kramdown:
@@ -22,8 +25,5 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: true
-
-# Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
-
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
